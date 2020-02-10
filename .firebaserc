@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fire-chat-webapp": {
+      "hosting": {
+        "fire-chat": [
+          "fire-chat-webapp"
+        ]
+      }
+    }
+  }
+}

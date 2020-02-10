@@ -105,6 +105,10 @@
 							"devServerTarget": "fire-chat:serve:production"
 						}
 					}
+				},
+				"deploy": {
+					"builder": "@angular/fire:deploy",
+					"options": {}
 				}
 			}
 		}
