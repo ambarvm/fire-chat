@@ -1,6 +1,27 @@
 # FireChat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+## Getting started
+
+1. To get started, install nodeJS from [here](https://nodejs.org/en/download/) or using your package manager.
+2. Copy the environment files with firebase config to `src/environments`.
+3. In the project directory, run:
+
+```bash
+npm i      # install dependencies
+npm start  # start development server
+```
+
+### Recommended VS Code extensions
+
+-   [Angular Language Service
+    ](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+-   [Angular Snippets (Version 8)
+    ](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
+-   [Angular 8 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout
+    ](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+-   [EditorConfig for VS Code
+    ](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+-   [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 
 ## Development server
 
@@ -13,14 +34,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
