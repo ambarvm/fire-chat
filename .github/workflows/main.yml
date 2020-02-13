@@ -19,8 +19,10 @@ jobs:
     - run: |
         mkdir ./src/environments
         echo "$ENV_PROD" > ./src/environments/environment.prod.ts
+        echo "$ENV_DEV" > ./src/environments/environment.ts
       env:
         ENV_PROD: ${{ secrets.ENV_PROD }}
+        ENV_DEV: ${{ secrets.ENV_DEV }}
     - run: npm run build:prod
     - uses: w9jds/firebase-action@master
       with:
