@@ -3,6 +3,7 @@
 ## Getting started
 
 1. To get started, install nodeJS from [here](https://nodejs.org/en/download/) or using your package manager.
+2. Install angular cli: `npm i -g @angular/cli`
 2. Copy the environment files with firebase config to `src/environments`.
 3. In the project directory, run:
 
