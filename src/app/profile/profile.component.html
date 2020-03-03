@@ -1,0 +1,107 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" >
+      <mat-list>
+        <mat-list-item>
+          <p mat-line>Item 1</p>
+        </mat-list-item>
+        <mat-list-item>
+          <p mat-line>Item 2</p>
+        </mat-list-item>
+        <mat-list-item>
+          <p mat-line>Item 3</p>
+        </mat-list-item>
+        <mat-list-item>
+          <p mat-line>Item 4</p>
+        </mat-list-item>
+        <mat-list-item>
+          <p mat-line>Item 5</p>
+        </mat-list-item>
+      </mat-list>
+      <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button> -->
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+    <div class="topcorner">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{name}}</mat-card-title>
+              <mat-card-subtitle>{{desc}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://media.npr.org/assets/img/2017/10/27/tra2016_comp_v005_008088.1111_wide-bc335cede10d086ba948db2d66f0093d36f0cc1e-s800-c85.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-actions>
+                <button mat-raised-button >Message</button>
+                <button mat-raised-button >Call</button>
+                <button mat-raised-button class="more">...</button>
+            </mat-card-actions>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item>
+                        <p mat-line>{{dname}}</p>
+                        <p mat-line style="color:grey">Display Name</p>
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>
+                        <p mat-line>{{mail}}</p>
+                        <p mat-line style="color:grey">Email</p>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+          </mat-card>
+        </mat-expansion-panel>
+      </mat-accordion>
+      
+    </div>
+    <!-- <div style="width: 25%;" class="topcorner">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div mat-card-avatar class="example-header-image"></div>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Thor Odinson</mat-card-title>
+              <mat-card-subtitle>Norse God</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://media.npr.org/assets/img/2017/10/27/tra2016_comp_v005_008088.1111_wide-bc335cede10d086ba948db2d66f0093d36f0cc1e-s800-c85.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-actions>
+                <button mat-raised-button style="width: 35%;">Message</button>
+                <button mat-raised-button style="width: 35%;">Call</button>
+                <button mat-raised-button >V</button>
+            </mat-card-actions>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item>
+                        <p mat-line>Thor Odinson</p>
+                        <p mat-line style="color:grey">Display Name</p>
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>
+                        <p mat-line>thor@asgard.com</p>
+                        <p mat-line style="color:grey">Email</p>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+          </mat-card>
+          
+        </mat-expansion-panel>
+    </div> -->
+  
+  </mat-drawer-container>
