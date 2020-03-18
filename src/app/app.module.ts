@@ -12,13 +12,22 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
-import { MatExpansionModule } from '@angular/material/expansion'
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
 	declarations: [AppComponent, NavBarComponent, ProfileComponent],
-	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,
-		MatSidenavModule, FormsModule, MatCardModule, MatButtonModule,
-		MatDividerModule, MatListModule, MatExpansionModule],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		MatSidenavModule,
+		FormsModule,
+		MatCardModule,
+		MatButtonModule,
+		MatDividerModule,
+		MatListModule,
+		MatExpansionModule,
+	],
 	providers: [],
 	bootstrap: [AppComponent],
 })

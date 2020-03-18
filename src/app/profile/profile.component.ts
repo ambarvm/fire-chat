@@ -1,19 +1,17 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+	selector: 'app-profile',
+	templateUrl: './profile.component.html',
+	styleUrls: ['./profile.component.scss'],
 })
 export class ProfileComponent implements OnInit {
-  @Input() name:string;
-  @Input() description:string;
-  @Input() displayName:string;
-  @Input() mail:string;
+	@Input() name: string;
+	@Input() description: string;
+	@Input() displayName: string;
+	@Input() mail: string;
 
-  constructor() { }
+	constructor() {}
 
-  ngOnInit(): void {
-  }
-
+	ngOnInit(): void {}
 }

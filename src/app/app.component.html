@@ -1,5 +1,20 @@
-<!-- <h1>🔥Fire Chat</h1>
-<router-outlet></router-outlet> -->
-<!-- <app-nav-bar></app-nav-bar> -->
-<!-- <app-profile></app-profile> -->
-<app-profile name="THOR" description="Norse God" displayName="Thor Odinson" mail="thor@asgard.com"></app-profile>
+<mat-drawer-container class="example-container" autosize>
+	<h1>🔥Fire Chat</h1>
+
+	<mat-drawer #drawer class="example-sidenav">
+		<app-nav-bar></app-nav-bar>
+	</mat-drawer>
+
+	<button class="toggle-btn" type="button" mat-button (click)="drawer.toggle()">
+		Toggle sidenav
+	</button>
+
+	<router-outlet></router-outlet>
+
+	<app-profile
+		name="THOR"
+		description="Norse God"
+		displayName="Thor Odinson"
+		mail="thor@asgard.com"
+	></app-profile>
+</mat-drawer-container>
