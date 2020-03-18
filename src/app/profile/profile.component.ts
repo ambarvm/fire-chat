@@ -6,10 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-  @Input() name;
-  @Input() desc;
-  @Input() dname;
-  @Input() mail;
+  @Input() name:string;
+  @Input() description:string;
+  @Input() displayName:string;
+  @Input() mail:string;
 
   constructor() { }
 
