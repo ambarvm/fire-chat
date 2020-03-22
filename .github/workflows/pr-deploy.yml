@@ -14,13 +14,14 @@ jobs:
       with:
         node-version: 12
     - run: npm ci
-    - run: |
-        mkdir ./src/environments
-        echo "$ENV_PROD" > ./src/environments/environment.prod.ts
-        echo "$ENV_DEV" > ./src/environments/environment.ts
+    - name: Copy env files
       env:
         ENV_PROD: ${{ secrets.ENV_PROD }}
         ENV_DEV: ${{ secrets.ENV_DEV }}
+      run: |
+        mkdir ./src/environments
+        echo "$ENV_PROD" > ./src/environments/environment.prod.ts
+        echo "$ENV_DEV" > ./src/environments/environment.ts
     - run: npx ng build --prod
     
     - name: Deploy to Surge
