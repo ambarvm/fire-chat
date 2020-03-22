@@ -10,6 +10,7 @@ export class ProfileComponent implements OnInit {
 	@Input() description: string;
 	@Input() displayName: string;
 	@Input() mail: string;
+	@Input() imageURL: string;
 
 	constructor() {}
 
