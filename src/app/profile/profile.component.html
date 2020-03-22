@@ -1,0 +1,32 @@
+<div class="topcorner">
+	<mat-accordion>
+		<mat-expansion-panel>
+			<mat-expansion-panel-header>
+				<mat-panel-title>
+					{{ name }}
+				</mat-panel-title>
+			</mat-expansion-panel-header>
+			<mat-card class="example-card">
+				<img mat-card-image [src]="imageURL" alt="Profile Picture" />
+				<mat-card-actions>
+					<button mat-raised-button>Message</button>
+					<button mat-raised-button>Call</button>
+					<button mat-raised-button class="more">...</button>
+				</mat-card-actions>
+				<mat-card-content>
+					<mat-list>
+						<mat-list-item>
+							<p mat-line>{{ displayName }}</p>
+							<p mat-line style="color:grey">Display Name</p>
+						</mat-list-item>
+						<mat-divider></mat-divider>
+						<mat-list-item>
+							<p mat-line>{{ mail }}</p>
+							<p mat-line style="color:grey">Email</p>
+						</mat-list-item>
+					</mat-list>
+				</mat-card-content>
+			</mat-card>
+		</mat-expansion-panel>
+	</mat-accordion>
+</div>
