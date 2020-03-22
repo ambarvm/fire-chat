@@ -1,0 +1,27 @@
+<mat-card class="mycard mat-elevation-z3">
+  <div class="center">
+    <h1 style="font-size: 2.2em;"><b>Sign in to your workspace</b></h1>
+    <p>Enter your workspace's <b>Slack URL.</b></p>
+  
+    <form class="example-form">
+      <mat-form-field class="example-full-width"> 
+        <mat-label>Your-workspace-URL</mat-label>
+        <span matSuffix>.slack.com</span>
+        <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+        <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid Workspace-URL address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          workspace-URL is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" class="btn-size"><b>Continue</b> <i class="material-icons">arrow_forward</i></button>
+    <br/>
+    <br/>
+    <p>Don’t know your workspace URL?<br/><a routerLink="/find"> <strong>Find your workspace</strong></a></p>
+  </div>
+
+  
+</mat-card>

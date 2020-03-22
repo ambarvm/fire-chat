@@ -1,0 +1,21 @@
+<mat-card class="mycard mat-elevation-z3">
+  <h1><b  style="font-size: 1.4em;">Find your Slack workspace</b></h1>
+  <h3>We’ll send you an email to confirm your address and find existing workspaces you’ve joined or can join.</h3>
+  <form class="example-form">
+    <mat-form-field class="example-full-width"> 
+      <mat-label>Email</mat-label>
+      <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="name@example.com">
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="primary" class="btn-size"><b>Confirm</b></button>
+  <br/> 
+  <a style="margin: auto; max-width: 100%;" title="Image from clipart.email"><img src="https://cdn.clipart.email/c837b60786923cd970de33eabb93e06d_man-searching-with-a-magnifying-glass-vector-clip-art-illustration-_1217-1300.jpeg" width="350" alt="Clipart Man With Magnifying Glass" /></a>
+</mat-card>
+
