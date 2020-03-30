@@ -1,5 +1,5 @@
 # FireChat
-
+A DSC IIT Bhilai Project : Messaging and File sharing platform inspired by slack
 ## Getting started
 
 1. To get started, install nodeJS from [here](https://nodejs.org/en/download/) or using your package manager.
